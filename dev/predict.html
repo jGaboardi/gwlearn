@@ -1054,6 +1054,14 @@
                   
 
 
+  
+    <a href="https://github.com/pysal/gwlearn/blob/main/docs/source/predict.ipynb" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h5.5L13 3.5zM6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m.12 13.5 3.74 3.74 1.42-1.41-2.33-2.33 2.33-2.33-1.42-1.41zm11.16 0-3.74-3.74-1.42 1.41 2.33 2.33-2.33 2.33 1.42 1.41z"/></svg>
+    </a>
+  
+  
+
 <h1 id="prediction">Prediction<a class="headerlink" href="#prediction" title="Link to this heading">¶</a></h1>
 <p>Both classification and regression models implement tools for prediction. Classifiers provide <code class="docutils literal notranslate"><span class="pre">predict_proba</span></code> (probabilities) and <code class="docutils literal notranslate"><span class="pre">predict</span></code> (labels), while regressors provide <code class="docutils literal notranslate"><span class="pre">predict</span></code> (continuous values) as any scikit-learn estimator would. However, they are retrieved differently.</p>
 <p>The prediction can be either done using a single nearest local model or using the ensemble of local models available within the bandwidth. At the same time, the prediction from local model(s) can be fused with the global model to combine the best from both worlds, following Georganos et al (2021).</p>
@@ -1989,29 +1997,29 @@ forceTheme('sk-container-id-1');</script></body></div></div>
   </thead>
   <tbody>
     <tr>
-      <th>51085</th>
-      <td>0.568913</td>
-      <td>0.431087</td>
+      <th>48417</th>
+      <td>0.988376</td>
+      <td>0.011624</td>
     </tr>
     <tr>
-      <th>48163</th>
-      <td>0.619449</td>
-      <td>0.380551</td>
+      <th>21127</th>
+      <td>0.754143</td>
+      <td>0.245857</td>
     </tr>
     <tr>
-      <th>48031</th>
-      <td>0.903056</td>
-      <td>0.096944</td>
+      <th>48293</th>
+      <td>0.503910</td>
+      <td>0.496090</td>
     </tr>
     <tr>
-      <th>37109</th>
-      <td>0.683634</td>
-      <td>0.316366</td>
+      <th>51199</th>
+      <td>0.779458</td>
+      <td>0.220542</td>
     </tr>
     <tr>
-      <th>13117</th>
-      <td>0.926385</td>
-      <td>0.073615</td>
+      <th>37105</th>
+      <td>0.012650</td>
+      <td>0.987350</td>
     </tr>
     <tr>
       <th>...</th>
@@ -2019,29 +2027,29 @@ forceTheme('sk-container-id-1');</script></body></div></div>
       <td>...</td>
     </tr>
     <tr>
-      <th>45079</th>
-      <td>0.000299</td>
-      <td>0.999701</td>
+      <th>47009</th>
+      <td>0.758665</td>
+      <td>0.241335</td>
     </tr>
     <tr>
-      <th>48283</th>
-      <td>0.436326</td>
-      <td>0.563674</td>
+      <th>12057</th>
+      <td>0.877656</td>
+      <td>0.122344</td>
     </tr>
     <tr>
-      <th>24029</th>
-      <td>0.706013</td>
-      <td>0.293987</td>
+      <th>37027</th>
+      <td>0.187529</td>
+      <td>0.812471</td>
     </tr>
     <tr>
-      <th>48203</th>
-      <td>0.053965</td>
-      <td>0.946035</td>
+      <th>22011</th>
+      <td>0.414511</td>
+      <td>0.585489</td>
     </tr>
     <tr>
-      <th>51025</th>
-      <td>0.062627</td>
-      <td>0.937373</td>
+      <th>22083</th>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
   </tbody>
 </table>
@@ -2058,7 +2066,7 @@ forceTheme('sk-container-id-1');</script></body></div></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/1240ce2aeffe24b106358516649f828ca282a7693bb9d3b79d404b0d1bfe2238.png" src="_images/1240ce2aeffe24b106358516649f828ca282a7693bb9d3b79d404b0d1bfe2238.png" />
+<img alt="_images/371ac6c7cea7563fa3b2a451532c794ae01b8ee5702b66914f34e35a6ce34817.png" src="_images/371ac6c7cea7563fa3b2a451532c794ae01b8ee5702b66914f34e35a6ce34817.png" />
 </div>
 </div>
 <p>The missing values have been linked to models that were not fitted. You can check all of those visually by plotting the focal prediction.</p>
@@ -2071,7 +2079,7 @@ forceTheme('sk-container-id-1');</script></body></div></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/ba6e94fc4d2adc8b8018f3aca82280d885ee93f69d20b122d015e873c0864c7e.png" src="_images/ba6e94fc4d2adc8b8018f3aca82280d885ee93f69d20b122d015e873c0864c7e.png" />
+<img alt="_images/799d56b95aa8ebebd4d37ab2abd0dcb2de75dcda5fbfbf3a62e045ea64ba4780.png" src="_images/799d56b95aa8ebebd4d37ab2abd0dcb2de75dcda5fbfbf3a62e045ea64ba4780.png" />
 </div>
 </div>
 <p>Filter it out and measure the performance on the left-out sample.</p>
@@ -2086,7 +2094,7 @@ forceTheme('sk-container-id-1');</script></body></div></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><code>0.782258064516129
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><code>0.8174603174603174
 </code></pre></div>
 </div>
 </div>
@@ -2138,29 +2146,29 @@ forceTheme('sk-container-id-1');</script></body></div></div>
   </thead>
   <tbody>
     <tr>
-      <th>51085</th>
-      <td>0.580736</td>
-      <td>0.419264</td>
+      <th>48417</th>
+      <td>0.945134</td>
+      <td>0.054866</td>
     </tr>
     <tr>
-      <th>48163</th>
-      <td>0.652872</td>
-      <td>0.347128</td>
+      <th>21127</th>
+      <td>0.771913</td>
+      <td>0.228087</td>
     </tr>
     <tr>
-      <th>48031</th>
-      <td>0.879916</td>
-      <td>0.120084</td>
+      <th>48293</th>
+      <td>0.505477</td>
+      <td>0.494523</td>
     </tr>
     <tr>
-      <th>37109</th>
-      <td>0.678295</td>
-      <td>0.321705</td>
+      <th>51199</th>
+      <td>0.779079</td>
+      <td>0.220921</td>
     </tr>
     <tr>
-      <th>13117</th>
-      <td>0.916843</td>
-      <td>0.083157</td>
+      <th>37105</th>
+      <td>0.024872</td>
+      <td>0.975128</td>
     </tr>
     <tr>
       <th>...</th>
@@ -2168,29 +2176,29 @@ forceTheme('sk-container-id-1');</script></body></div></div>
       <td>...</td>
     </tr>
     <tr>
-      <th>45079</th>
-      <td>0.007469</td>
-      <td>0.992531</td>
+      <th>47009</th>
+      <td>0.849239</td>
+      <td>0.150761</td>
     </tr>
     <tr>
-      <th>48283</th>
-      <td>0.500726</td>
-      <td>0.499274</td>
+      <th>12057</th>
+      <td>0.863965</td>
+      <td>0.136035</td>
     </tr>
     <tr>
-      <th>24029</th>
-      <td>0.681957</td>
-      <td>0.318043</td>
+      <th>37027</th>
+      <td>0.232888</td>
+      <td>0.767112</td>
     </tr>
     <tr>
-      <th>48203</th>
-      <td>0.082171</td>
-      <td>0.917829</td>
+      <th>22011</th>
+      <td>0.386296</td>
+      <td>0.613704</td>
     </tr>
     <tr>
-      <th>51025</th>
-      <td>0.061369</td>
-      <td>0.938631</td>
+      <th>22083</th>
+      <td>0.012990</td>
+      <td>0.987010</td>
     </tr>
   </tbody>
 </table>
@@ -2207,7 +2215,7 @@ forceTheme('sk-container-id-1');</script></body></div></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/6164fba3f1fe364d756485a58990960557ed0aae5277efc606af6387e0eb4165.png" src="_images/6164fba3f1fe364d756485a58990960557ed0aae5277efc606af6387e0eb4165.png" />
+<img alt="_images/c472673306f21a14793097510aa697223fc11cead6d32a2b995017a31b979711.png" src="_images/c472673306f21a14793097510aa697223fc11cead6d32a2b995017a31b979711.png" />
 </div>
 </div>
 <p>This is one of the benefits of the ensemble prediction. Another is theoretical spatial robustness. Nevertheless, the actual metrics are typically very similar between the models.</p>
@@ -2221,7 +2229,7 @@ forceTheme('sk-container-id-1');</script></body></div></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><code>0.7605633802816901
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><code>0.8098591549295775
 </code></pre></div>
 </div>
 </div>
@@ -2265,29 +2273,29 @@ forceTheme('sk-container-id-1');</script></body></div></div>
   </thead>
   <tbody>
     <tr>
-      <th>51085</th>
-      <td>0.581339</td>
-      <td>0.418661</td>
+      <th>48417</th>
+      <td>0.944399</td>
+      <td>0.055601</td>
     </tr>
     <tr>
-      <th>48163</th>
-      <td>0.600575</td>
-      <td>0.399425</td>
+      <th>21127</th>
+      <td>0.763424</td>
+      <td>0.236576</td>
     </tr>
     <tr>
-      <th>48031</th>
-      <td>0.825118</td>
-      <td>0.174882</td>
+      <th>48293</th>
+      <td>0.483072</td>
+      <td>0.516928</td>
     </tr>
     <tr>
-      <th>37109</th>
-      <td>0.691150</td>
-      <td>0.308850</td>
+      <th>51199</th>
+      <td>0.789955</td>
+      <td>0.210045</td>
     </tr>
     <tr>
-      <th>13117</th>
-      <td>0.897654</td>
-      <td>0.102346</td>
+      <th>37105</th>
+      <td>0.024345</td>
+      <td>0.975655</td>
     </tr>
     <tr>
       <th>...</th>
@@ -2295,29 +2303,29 @@ forceTheme('sk-container-id-1');</script></body></div></div>
       <td>...</td>
     </tr>
     <tr>
-      <th>45079</th>
-      <td>0.000637</td>
-      <td>0.999363</td>
+      <th>47009</th>
+      <td>0.771796</td>
+      <td>0.228204</td>
     </tr>
     <tr>
-      <th>48283</th>
-      <td>0.362861</td>
-      <td>0.637139</td>
+      <th>12057</th>
+      <td>0.702147</td>
+      <td>0.297853</td>
     </tr>
     <tr>
-      <th>24029</th>
-      <td>0.711530</td>
-      <td>0.288470</td>
+      <th>37027</th>
+      <td>0.188227</td>
+      <td>0.811773</td>
     </tr>
     <tr>
-      <th>48203</th>
-      <td>0.061982</td>
-      <td>0.938018</td>
+      <th>22011</th>
+      <td>0.443599</td>
+      <td>0.556401</td>
     </tr>
     <tr>
-      <th>51025</th>
-      <td>0.081332</td>
-      <td>0.918668</td>
+      <th>22083</th>
+      <td>0.091568</td>
+      <td>0.908432</td>
     </tr>
   </tbody>
 </table>
@@ -2334,7 +2342,7 @@ forceTheme('sk-container-id-1');</script></body></div></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><code>0.7746478873239436
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><code>0.8028169014084507
 </code></pre></div>
 </div>
 </div>
@@ -3378,7 +3386,7 @@ RMSE: 3.203
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.sections", "navigation.top", "search.share", "search.suggest", "toc.follow", "toc.sticky", "content.code.copy"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike", "staticVersions": null, "versionPath": "https://pysal.org/gwlearn/versions.json"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.sections", "navigation.top", "search.share", "search.suggest", "toc.follow", "toc.sticky", "content.code.copy", "content.action.edit"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike", "staticVersions": null, "versionPath": "https://pysal.org/gwlearn/versions.json"}}</script>
     
       
         <script src="_static/sphinx_immaterial_theme.32136f45f91ae6956.min.js?v=a7a9472a"></script>
