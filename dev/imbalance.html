@@ -989,10 +989,6 @@ Extracting &#39;guerry/guerry.prj&#39; from &#39;/home/runner/.cache/geodatasets
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><code>/home/runner/micromamba/envs/py314-latest/lib/python3.14/site-packages/sklearn/ensemble/_forest.py:589: UserWarning: Some inputs do not have OOB scores. This probably means too few trees were used to compute any reliable OOB estimates.
-  warn(
-</code></pre></div>
-</div>
 <div class="output text_html"><style>.sk-global {
   /* Definition of color scheme common for light and dark mode */
   --sklearn-color-text: #000;
@@ -2159,7 +2155,7 @@ forceTheme('sk-container-id-1');</script></body></div></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/a262757723a9ba8e815b4cbd31e57504d34954a18d6f960d2c7099bbe7986c6e.png" src="_images/a262757723a9ba8e815b4cbd31e57504d34954a18d6f960d2c7099bbe7986c6e.png" />
+<img alt="_images/c065a9bc4ab4a6328be3975950e98ba1cba516112895aa6742c0d1e8528ea3a3.png" src="_images/c065a9bc4ab4a6328be3975950e98ba1cba516112895aa6742c0d1e8528ea3a3.png" />
 </div>
 </div>
 <p>The local performance for such a model then looks like this.</p>
@@ -2172,7 +2168,7 @@ forceTheme('sk-container-id-1');</script></body></div></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/063f1779d66f794910fa8b5df082a747bf6d1427e5afdabc50073e728a62ad5b.png" src="_images/063f1779d66f794910fa8b5df082a747bf6d1427e5afdabc50073e728a62ad5b.png" />
+<img alt="_images/c97ab5d1b01d5b4d85c44520fbb20b27f71b1a86ff328c6a336b42fa2bcbd8f5.png" src="_images/c97ab5d1b01d5b4d85c44520fbb20b27f71b1a86ff328c6a336b42fa2bcbd8f5.png" />
 </div>
 </div>
 <h2 id="adapting-the-allowed-proportion">Adapting the allowed proportion<a class="headerlink" href="#adapting-the-allowed-proportion" title="Link to this heading">¶</a></h2>
@@ -2189,6 +2185,10 @@ forceTheme('sk-container-id-1');</script></body></div></div>
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><code>/home/runner/micromamba/envs/py314-latest/lib/python3.14/site-packages/sklearn/ensemble/_forest.py:589: UserWarning: Some inputs do not have OOB scores. This probably means too few trees were used to compute any reliable OOB estimates.
+  warn(
+</code></pre></div>
+</div>
 <div class="output text_html"><style>.sk-global {
   /* Definition of color scheme common for light and dark mode */
   --sklearn-color-text: #000;
@@ -3357,7 +3357,7 @@ forceTheme('sk-container-id-2');</script></body></div></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/2b966cf709f74b74e24a4b1cd197f05103cbbe577d8acf8b574d198be9600588.png" src="_images/2b966cf709f74b74e24a4b1cd197f05103cbbe577d8acf8b574d198be9600588.png" />
+<img alt="_images/8da3debaceb39f209e669a22b2c42baf29a97b0a88e5d0ae7e16e592ad219f98.png" src="_images/8da3debaceb39f209e669a22b2c42baf29a97b0a88e5d0ae7e16e592ad219f98.png" />
 </div>
 </div>
 <h2 id="undersampling">Undersampling<a class="headerlink" href="#undersampling" title="Link to this heading">¶</a></h2>
@@ -4306,7 +4306,7 @@ a.param-doc-link::before {
        <tr class="default">
            <td class="param"><a class="param-doc-link" style="text-decoration:none;">oob_pred_pooled_</a></td>
            <td class="fitted-att-type">ndarray[int64](1196,)</td>
-           <td>[1,0,1,...,1,0,0]</td>
+           <td>[1,0,1,...,1,1,0]</td>
 
 
        </tr>
@@ -4320,7 +4320,7 @@ a.param-doc-link::before {
  [0.],
  ...,
  [1.],
- [0.],
+ [1.],
  [1.]]</td>
 
 
@@ -4568,7 +4568,7 @@ forceTheme('sk-container-id-3');</script></body></div></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/b221180e51d0632f80e360093bc71750a3a366e9509c621f862674f81b3f08fd.png" src="_images/b221180e51d0632f80e360093bc71750a3a366e9509c621f862674f81b3f08fd.png" />
+<img alt="_images/023d633f51ec54825525708751edb9d3d60d151fdfe8a5ac5ee5e8349990ebc3.png" src="_images/023d633f51ec54825525708751edb9d3d60d151fdfe8a5ac5ee5e8349990ebc3.png" />
 </div>
 </div>
 <p>Keep in mind that for models like this one, where we use only 25 observations in each local model, undersampling can have a severe efect on the model robustness in a negative way, as it may reduce the number of observations that are actually used by quite a lot. Use with caution and ideally in situations where you rely on a larger number of neighbors.</p>
